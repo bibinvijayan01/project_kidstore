@@ -1,0 +1,224 @@
+
+
+    <!-- Header (Placeholder) -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MyStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Single Product Section -->
+    <section class="py-5">
+        <div class="container-fluid">
+            <div class="row g-5">
+                <!-- Product Images -->
+                <div class="col-lg-6">
+                    <!-- Main Image Swiper -->
+                    <div class="swiper product-image-gallery mb-3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://placehold.co/600x600/E5E7EB/1F2937?text=Product+Image+1" alt="Product Image 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://placehold.co/600x600/D1D5DB/1F2937?text=Product+Image+2" alt="Product Image 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://placehold.co/600x600/9CA3AF/1F2937?text=Product+Image+3" alt="Product Image 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://placehold.co/600x600/6B7280/1F2937?text=Product+Image+4" alt="Product Image 4">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thumbnails Swiper -->
+                    <div class="swiper product-thumbnail-gallery">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://placehold.co/80x80/E5E7EB/1F2937?text=1" alt="Thumbnail 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://placehold.co/80x80/D1D5DB/1F2937?text=2" alt="Thumbnail 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://placehold.co/80x80/9CA3AF/1F2937?text=3" alt="Thumbnail 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://placehold.co/80x80/6B7280/1F2937?text=4" alt="Thumbnail 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="col-lg-6">
+                    <div class="product-details">
+                        <h1 class="display-5 fw-bold">Cute Cartoon Backpack</h1>
+                        <div class="d-flex align-items-center my-3">
+                            <span class="rating-stars me-2">⭐ ⭐ ⭐ ⭐ ☆</span>
+                            <span class="text-muted">(45 Reviews)</span>
+                        </div>
+                        <div class="d-flex align-items-baseline my-3">
+                            <span class="price">$32.99</span>
+                            <span class="old-price">$45.00</span>
+                        </div>
+                        <p class="lead text-secondary">
+                            A durable and adorable cartoon backpack, perfect for kids. Features multiple compartments and adjustable straps for comfort. Available in multiple vibrant colors.
+                        </p>
+                        
+                        <!-- Color and Size Options -->
+                        <div class="my-4">
+                            <p class="fw-bold mb-2">Color:</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-secondary rounded-circle" style="width: 32px; height: 32px; background-color: #f8d7da;"></button>
+                                <button class="btn btn-outline-secondary rounded-circle" style="width: 32px; height: 32px; background-color: #cff4fc;"></button>
+                                <button class="btn btn-outline-secondary rounded-circle" style="width: 32px; height: 32px; background-color: #d1e7dd;"></button>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <p class="fw-bold mb-2">Size:</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-dark">Small</button>
+                                <button class="btn btn-outline-dark">Medium</button>
+                                <button class="btn btn-outline-dark">Large</button>
+                            </div>
+                        </div>
+
+                        <!-- Quantity and Add to Cart -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="input-group product-qty me-3">
+                                <span class="input-group-text quantity-left-minus">-</span>
+                                <input type="text" class="form-control text-center input-number" value="1">
+                                <span class="input-group-text quantity-right-plus">+</span>
+                            </div>
+                            <button class="btn btn-primary btn-lg flex-grow-1">Add to Cart</button>
+                        </div>
+
+                        <!-- Product Information Tabs -->
+                        <div class="product-info-tabs">
+                            <ul class="nav nav-tabs" id="productTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">Reviews</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content pt-3" id="productTabContent">
+                                <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+                                    <p>Our Cute Cartoon Backpack is designed with your child's comfort and style in mind. Made from high-quality, durable materials, it can withstand the wear and tear of daily use. The spacious main compartment is perfect for books and lunchboxes, while the side pockets can hold water bottles. The padded, adjustable shoulder straps ensure a comfortable fit for any child.</p>
+                                    <p><strong>Features:</strong></p>
+                                    <ul>
+                                        <li>High-quality, water-resistant material</li>
+                                        <li>Spacious main compartment with a laptop sleeve</li>
+                                        <li>Two side pockets for water bottles</li>
+                                        <li>Padded, adjustable shoulder straps</li>
+                                        <li>Fun and vibrant cartoon design</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">User 1 - 5 Stars</h6>
+                                        <p>My daughter absolutely loves this backpack! It's so cute and well-made.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">User 2 - 4 Stars</h6>
+                                        <p>Great backpack, but the color was a little different than the picture.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="py-5">
+      <div class="container-fluid">
+          <div class="row mb-5">
+              <div class="col-md-12">
+                  <div class="section-header d-flex flex-wrap justify-content-between align-items-center">
+                      <h2 class="section-title mb-0">Related Products</h2>
+                      <a href="homepage.html" class="btn btn-outline-secondary">View All</a>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper related-products-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://placehold.co/400x400/E5E7EB/1F2937?text=Related+Product+1" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Kids T-Shirt Set</h5>
+                            <p class="card-text text-primary fw-bold">$25.50</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://placehold.co/400x400/D1D5DB/1F2937?text=Related+Product+2" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Light-up Sneakers</h5>
+                            <p class="card-text text-primary fw-bold">$45.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://placehold.co/400x400/9CA3AF/1F2937?text=Related+Product+3" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Soft Teddy Bear</h5>
+                            <p class="card-text text-primary fw-bold">$18.00</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://placehold.co/400x400/6B7280/1F2937?text=Related+Product+4" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Winter Jacket</h5>
+                            <p class="card-text text-primary fw-bold">$59.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://placehold.co/400x400/374151/F9FAFB?text=Related+Product+5" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Party Dress</h5>
+                            <p class="card-text text-primary fw-bold">$39.99</p>
+                            <a href="#" class="btn btn-sm btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+      </div>
+    </section>
+
