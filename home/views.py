@@ -1,12 +1,55 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from .models import Profile
+from .models import Profile, Product, Category
+
+
 
 def index(request):
     return render(request, 'homepage/index.html')
+
+# home/views.py
+
+def cards_view(request):
+    # 1. Get all the products from the database
+    products = Product.objects.all()
+    
+    # 2. Create the context dictionary to send the products to the template
+    context = {'products': products}
+    
+    # 3. Render the template and pass it the context
+    return render(request, 'cards/cards.html', context)  
+
+def product_detail_view(request, pk):
+    # This uses the 'pk' from the URL to get the correct product from the database
+    product = get_object_or_404(Product, pk=pk)
+    
+    context = {
+        'product': product
+    }
+    
+    # You will need to create this new template for the detail page
+    return render(request, 'products/product_detail.html', context)
+
+def product_list(request):
+    category_id = request.GET.get('category')
+    categories = Category.objects.all()
+
+    if category_id:
+        products = Product.objects.filter(category_id=category_id)
+    else:
+        products = Product.objects.all()
+
+    context = {
+        'products': products,
+        'categories': categories,
+        'selected_category': int(category_id) if category_id else None
+    }
+    return render(request, 'caeds/products.html', context)
+
+
 
 def login_register_view(request):
     if request.method == 'POST':
