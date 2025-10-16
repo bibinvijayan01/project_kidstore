@@ -1,0 +1,115 @@
+/* style.css */
+
+/* General Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+}
+
+/* Product Image */
+.img-fluid {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* Product Title & Price */
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.text-primary {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0d6efd !important;
+}
+
+/* Category text */
+.text-muted {
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* Badges */
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+/* Product Description */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Quantity Input */
+#quantity {
+    width: 80px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(45deg, #0d6efd, #6610f2);
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-radius: 8px;
+    padding: 0.6rem 1.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-primary {
+        font-size: 1.3rem;
+    }
+
+    #quantity {
+        width: 60px;
+    }
+}
+/* Footer */    

@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from .models import Profile, Product, Category
+# from .models import Profile, Product, Category
 
 
 
@@ -21,6 +21,7 @@ def cards_view(request):
     
     # 3. Render the template and pass it the context
     return render(request, 'cards/cards.html', context)  
+
 
 def product_detail_view(request, pk):
     # This uses the 'pk' from the URL to get the correct product from the database
