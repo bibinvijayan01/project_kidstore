@@ -1,0 +1,38 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Example Widget</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .product-container { max-width: 800px; margin: auto; }
+        .product-image { width: 100%; max-width: 400px; height: auto; }
+        .product-details { margin-top: 20px; }
+        .price { font-size: 24px; color: #e74c3c; }
+        .description { margin: 20px 0; }
+        .add-to-cart { background-color: #3498db; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        .add-to-cart:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <h1>Example Widget</h1>
+        <img src="https://via.placeholder.com/400x300?text=Product+Image" alt="Example Widget" class="product-image">
+        <div class="product-details">
+            <p class="price">$29.99</p>
+            <p class="description">
+                This is a high-quality example widget designed for everyday use. It features durable materials, easy assembly, and comes with a one-year warranty. Perfect for home or office settings.
+            </p>
+            <ul>
+                <li>Dimensions: 10x5x2 inches</li>
+                <li>Weight: 1.5 lbs</li>
+                <li>Color: Blue</li>
+                <li>Material: Plastic and Metal</li>
+            </ul>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

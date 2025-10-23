@@ -13,14 +13,13 @@ class Product(models.Model):
 
     slug = models.SlugField(max_length=200,unique=True)
 
-    image = models.URLField(max_length=500, blank=True, null=True)
+    image = models.URLField(max_length=500,blank=True,null=True)
 
     stock = models.IntegerField()
 
     is_available = models.BooleanField(default=True)
 
     category = models.ForeignKey('category.Category', on_delete=models.CASCADE)
-
 
     created_date = models.DateTimeField(auto_now_add=True)
 

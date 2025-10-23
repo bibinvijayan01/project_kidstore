@@ -9,4 +9,4 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ('product_name', 'category__category_name')
     list_filter = ('is_available', 'category')
 
-admin.site.register(Product)
+admin.site.register(Product, ProductAdmin)

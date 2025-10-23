@@ -11,5 +11,5 @@ urlpatterns = [
     path('cards/', views.cards_view, name='cards_view'),
                                       # Cards Page
     path('product/<int:pk>/', views.product_detail_view, name='product_detail'), # Product Detail Page
-    path('products/', views.product_list, name='product_list'),
+   
 ]
